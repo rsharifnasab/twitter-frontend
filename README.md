@@ -6,9 +6,9 @@ inspired by [real word react-redux ](https://github.com/gothinkster/react-redux-
 
 
 ## team mates
-1. Roozbeh Sharifnasab
-2. Parsa Fadaee [+]()
-3. Seyed [+]()
+1. Roozbeh Sharifnasab [+](github.com/rsharifnasab)
+2. Parsa Fadaee [+](github.com/ParsaFadaei)
+3. Seyed Mohammad Farahani [+](github.com/SeyedMohammadFarahani)
 
 ## Special thanks to
 + Course instructor: Parham Alvani [+](github.com/1995parham)
