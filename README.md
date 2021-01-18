@@ -18,7 +18,6 @@ inspired by [real word react-redux ](https://github.com/gothinkster/react-redux-
    3. Parsa Hejabi [+](https://github.com/ParsaHejabi)
    4. Pouya [+]()
 
-###  
 
 ## Getting started
 
