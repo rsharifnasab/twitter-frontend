@@ -14,15 +14,19 @@ const ArticleActions = props => {
   const del = () => {
     props.onClickDelete(agent.Articles.del(article.slug))
   };
+  const ret = ()=> {
+      console.log("retweet")
+  };
   if (props.canModify) {
     return (
       <span>
-
+          {/*
         <Link
           to={`/editor/${article.slug}`}
           className="btn btn-outline-secondary btn-sm">
           <i className="ion-edit"></i> Edit Article
         </Link>
+         */}
 
         <button className="btn btn-outline-danger btn-sm" onClick={del}>
           <i className="ion-trash-a"></i> Delete Article
@@ -34,6 +38,9 @@ const ArticleActions = props => {
 
   return (
     <span>
+        <button className="btn btn-outline-secondary btn-sm" onClick={ret}>
+          <i className="ion-edit-a"></i> Retweet Article
+        </button>
     </span>
   );
 };

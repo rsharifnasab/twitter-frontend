@@ -125,7 +125,7 @@ class Editor extends React.Component {
                     <textarea
                       className="form-control"
                       rows="8"
-                      placeholder="Write your article (in markdown)"
+                      placeholder="Write your tweet"
                       value={this.props.body}
                       onChange={this.changeBody}>
                     </textarea>
