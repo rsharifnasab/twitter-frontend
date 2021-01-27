@@ -84,12 +84,16 @@ class Editor extends React.Component {
 
         this.submitForm = ev => {
             ev.preventDefault();
+            
+            if(!this.props.title || !this.props.body || this.props.body.length > 250){
+                return;
+            }
             //const tags = this.props.tagList;
             const tags = this.findTags(this.props.body);
 
             const article = {
                 title: this.props.title,
-                description: this.props.description,
+                description: ""+new Date(),
                 body: this.props.body,
                 tagList: tags
             };
@@ -97,8 +101,6 @@ class Editor extends React.Component {
             const slug = {
                 slug: this.props.articleSlug
             };
-            console.log("--slug--");
-            console.log(slug);
             const promise = this.props.articleSlug ?
                 agent.Articles.update(Object.assign(article, slug)) :
                 agent.Articles.create(article);
@@ -148,7 +150,7 @@ class Editor extends React.Component {
                       value={this.props.title}
                       onChange={this.changeTitle} />
                   </fieldset>
-
+                    {/*
                   <fieldset className="form-group">
                     <input
                       className="form-control"
@@ -157,6 +159,7 @@ class Editor extends React.Component {
                       value={this.props.description}
                       onChange={this.changeDescription} />
                   </fieldset>
+                  */}
 
                   <fieldset className="form-group">
                     <textarea
