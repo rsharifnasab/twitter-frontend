@@ -4,8 +4,6 @@ build twitter-like front-end for internet engeering course - fall 99
 
 with react+redux
 
-inspired by [real word react-redux ](https://github.com/gothinkster/react-redux-realworld-example-app) project
-
 ## team mates
 
 1. Roozbeh Sharifnasab [+](github.com/rsharifnasab)
