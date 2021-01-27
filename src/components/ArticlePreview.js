@@ -24,7 +24,7 @@ const ArticlePreview = props => {
     FAVORITED_CLASS :
     NOT_FAVORITED_CLASS;
 
-  const handleClick = ev => {
+  const handleLike = ev => {
     ev.preventDefault();
     if (article.favorited) {
       props.unfavorite(article.slug);
@@ -32,6 +32,12 @@ const ArticlePreview = props => {
       props.favorite(article.slug);
     }
   };
+
+  const handleRet = ev => {
+    ev.preventDefault();
+  }
+
+
 
   return (
     <div className="article-preview">
@@ -50,8 +56,13 @@ const ArticlePreview = props => {
         </div>
 
         <div className="pull-xs-right">
-          <button className={favoriteButtonClass} onClick={handleClick}>
+          <button className={favoriteButtonClass} onClick={handleLike}>
             <i className="ion-heart"></i> {article.favoritesCount}
+          </button>
+        </div>
+        <div className="pull-xs-right">
+            <button className={NOT_FAVORITED_CLASS} onClick={handleRet}>
+              retweet
           </button>
         </div>
       </div>
